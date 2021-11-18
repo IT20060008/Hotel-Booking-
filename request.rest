@@ -1,0 +1,35 @@
+GET http://localhost:8000/room
+
+###
+GET http://localhost:8000/event/2
+
+###
+POST http://localhost:8000/room/add
+content-Type: application/json
+
+{
+    "type":"p6sss",
+    "roomNo":888,
+     "noOfBeds":888,
+        "price":888,
+        "description":"ss",
+         "availability":"ss"
+
+
+}
+
+###
+PUT   http://localhost:8000/room/update/613f1b811267aa0924c5a17a
+content-Type: application/json
+
+{
+     "type":"p6",
+    "roomNo":888,
+     "noOfBeds":888,
+        "price":888,
+        "description":"ss",
+         "availability":"s1"
+}
+
+###
+DELETE  http://localhost:8000/room/delete/613f1b811267aa0924c5a17a
